@@ -1,0 +1,92 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+input[type="file"], input[type="number"], input[type="range"], select, button {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 320px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#message {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+#fileDetails {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+#progressContainer {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 300px;
+}
+
+#loadingSpinner {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+progress {
+    width: 100%;
+}
+
+#previewContainer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.upload-area {
+    padding: 20px;
+    border: 2px dashed #4CAF50;
+    cursor: pointer;
+    margin: 20px 0;
+    border-radius: 10px;
+}

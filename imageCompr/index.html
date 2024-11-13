@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Image Compressor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Advanced Image Compressor</h1>
+
+        <!-- Image Type Selection (Single) -->
+        <label for="imageTypeSelect">Choose Image Type:</label>
+        <select id="imageTypeSelect" disabled>
+            <option value="single">Single Image</option>
+        </select>
+
+        <!-- Drag-and-Drop Area -->
+        <div id="dragArea" class="upload-area">
+            <p>Drag & Drop your image here or click to select files</p>
+            <input type="file" id="imageInput" accept="image/*">
+        </div>
+
+        <!-- Image details and current size -->
+        <div id="fileDetails">
+            <p>Current Image Size: <span id="currentSize">0</span> MB</p>
+        </div>
+
+        <!-- Desired size input -->
+        <label for="desiredSize">Desired Size (MB):</label>
+        <input type="number" id="desiredSize" placeholder="Enter target size (in MB)" min="0.1" step="0.1" value="1">
+
+        <!-- Compression quality slider -->
+        <label for="qualitySlider">Compression Quality:</label>
+        <input type="range" id="qualitySlider" min="0.1" max="1" step="0.05" value="0.85">
+
+        <!-- Output format selector -->
+        <label for="formatSelect">Choose Output Format:</label>
+        <select id="formatSelect">
+            <option value="jpeg">JPEG</option>
+            <option value="png">PNG</option>
+            <option value="webp">WebP</option>
+        </select>
+
+        <!-- Filename input -->
+        <label for="filename">Save As (Filename):</label>
+        <input type="text" id="filename" placeholder="Enter filename" value="compressed_image">
+
+        <!-- Compress button -->
+        <button id="compressBtn" disabled>Compress Image</button>
+
+        <!-- Loading Spinner -->
+        <div id="loadingSpinner" style="display: none;">Compressing...</div>
+
+        <!-- Progress Bar -->
+        <div id="progressContainer" style="display: none;">
+            <progress id="progressBar" max="100" value="0"></progress>
+        </div>
+
+        <!-- Message Area -->
+        <div id="message"></div>
+
+        <!-- Preview Image -->
+        <div id="previewContainer" style="display: none;">
+            <h3>Preview</h3>
+            <img id="preview" style="max-width: 100%; margin-top: 20px;">
+        </div>
+
+        <!-- Download Link -->
+        <a id="downloadLink" style="display: none;">
+            <button id="downloadBtn">Download Compressed Image</button>
+        </a>
+    </div>
+
+    <!-- External Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
