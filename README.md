@@ -59,7 +59,7 @@ Example file structure:
 
 ```bash
 git clone https://github.com/ZanethembaN/Image-compr.git
-cd image-compr
+cd image-compr```
 
 
 ### Technologies Used
