@@ -57,7 +57,7 @@ Open the index.html file in your browser.
 
 Example file structure:
 
-'''bash
+```bash
 git clone https://github.com/ZanethembaN/Image-compr.git
 cd image-compr
 
